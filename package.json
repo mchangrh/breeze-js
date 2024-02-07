@@ -1,0 +1,16 @@
+{
+  "name": "@mchangrh/breeze-js",
+  "version": "1.0.0",
+  "description": "suckless 'sent' parser in javascript",
+  "main": "lib/breeze.js",
+  "types": "lib/breeze.ts",
+  "keywords": [],
+  "author": "michael@mchang.name",
+  "license": "(MIT OR Apache-2.0)",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
