@@ -1,4 +1,4 @@
-const parseFile = require('../src/breeze.js');
+const parseFile = require('../lib/breeze.js');
 
 test("parses config correctly", () => {
     const expected = {

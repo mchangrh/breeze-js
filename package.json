@@ -1,6 +1,6 @@
 {
   "name": "@mchangrh/breeze-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "suckless 'sent' parser in javascript",
   "main": "lib/breeze.js",
   "types": "lib/breeze.ts",
