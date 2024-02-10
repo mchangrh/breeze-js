@@ -93,11 +93,11 @@ Ipsum
 test("escape with backslashes", () => {
     const expected = [{
         type: 'text',
-        text: '\\@not_actually_an_image.png',
+        text: 'not_actually_an_image.png',
         lines: 1
     }, {
         type: 'text',
-        text: '\\#not_actually_a_comment',
+        text: 'not_actually_a_comment',
         lines: 1
     }]
     const text = `

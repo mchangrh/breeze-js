@@ -1,7 +1,7 @@
 const fs = require('fs');
 const file = fs.readFileSync('tests/example.sent', 'utf8');
 
-const parseFile = require('../src/breeze.js');
+const parseFile = require('../lib/breeze.js');
 
 // big test case
 test("parses example.sent correctly", () => {
@@ -28,6 +28,7 @@ test("parses example.sent correctly", () => {
           },
           { type: 'text', text: 'Images are simple:', lines: 1 },
           { type: 'image', src: 'logo.png' },
+          { type: 'image', src: 'https://mchangrh.github.io/breeze-web/examples/fe0f_twemoji.png' },
           {
             type: 'text',
             text: 'The text-based sent format:\n' +
@@ -63,8 +64,8 @@ test("parses example.sent correctly", () => {
           { type: 'blank' },
           {
             type: 'text',
-            text: '\\@this_line_actually_started_with_a_\\.png\n' +
-              '\\#This line as well\n' +
+            text: 'this_line_actually_started_with_a_\\.png\n' +
+              'This line as well\n' +
               'Prepend a backslash to kill behaviour of special characters',
             lines: 3
           },
